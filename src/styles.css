@@ -1,6 +1,36 @@
-h1 {
+:root {
+  --font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("/images/suitcases-background.jpg");
+  background-size: cover;
+  position: absolute;
   font-family: "Dancing Script", cursive;
 }
-h2 {
-  font-family: "Open Sans", sans-serif;
+.hero {
+  background-color: #ecf2f9;
+  text-align: center;
+  border: 5px solid #385170;
+  border-radius: 30px;
+  margin: 25px auto;
+  padding: 70px 25px;
+  max-width: 95%;
+  position: relative;
+}
+h1 {
+  font-size: 60px;
+  color: #385170;
+}
+h2,
+h3 {
+  font-family: var(--font-family);
+}
+h3 {
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+h2{
+  margin-top: 40px;
+  font-size: 25px;
 }
