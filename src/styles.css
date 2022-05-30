@@ -1,5 +1,7 @@
 :root {
   --font-family: "Open Sans", sans-serif;
+  --background-color: #ecf2f9;
+  --primary-color: #385170;
 }
 
 body {
@@ -9,28 +11,41 @@ body {
   font-family: "Dancing Script", cursive;
 }
 .hero {
-  background-color: #ecf2f9;
+  background-color: var(--background-color);
   text-align: center;
-  border: 5px solid #385170;
+  border: 5px solid var(--primary-color)
   border-radius: 30px;
   margin: 25px auto;
   padding: 70px 25px;
   max-width: 95%;
   position: relative;
 }
-h1 {
+.hero h1 {
   font-size: 60px;
-  color: #385170;
+  color: var(--primary-color);
 }
-h2,
+.hero h2,
 h3 {
   font-family: var(--font-family);
 }
-h3 {
+.hero h3 {
   margin-bottom: 60px;
   font-size: 30px;
 }
-h2{
+.hero h2{
   margin-top: 40px;
   font-size: 25px;
+}
+.container h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.container p {
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+.paragraph {
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  background-color: var(--background-color);
 }
