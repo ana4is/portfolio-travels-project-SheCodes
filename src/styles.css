@@ -10,6 +10,35 @@ body {
   background-size: cover;
   font-family: "Dancing Script", cursive;
 }
+nav {
+  background-color: var(--background-color);
+  text-align: center;
+  border: 5px solid var(--primary-color);
+  border-radius: 30px;
+  margin: 15px auto;
+  padding: 15px 10px;
+  max-width: 100%;
+  font-size: 30px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li .active a {
+  color: var(--color-link);
+}
 
 .hero,
 .contact-links {
