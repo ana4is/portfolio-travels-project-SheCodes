@@ -2,50 +2,84 @@
   --font-family: "Open Sans", sans-serif;
   --background-color: #ecf2f9;
   --primary-color: #385170;
+  --color-link: #a2a8d3;
 }
 
 body {
   background-image: url("/images/suitcases-background.jpg");
   background-size: cover;
-  position: absolute;
   font-family: "Dancing Script", cursive;
 }
+
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  border: 5px solid var(--primary-color)
+  border: 5px solid var(--primary-color);
   border-radius: 30px;
   margin: 25px auto;
   padding: 70px 25px;
   max-width: 95%;
-  position: relative;
+  position: center;
 }
 .hero h1 {
   font-size: 60px;
   color: var(--primary-color);
 }
 .hero h2,
-h3 {
+.hero h3 {
   font-family: var(--font-family);
 }
 .hero h3 {
   margin-bottom: 60px;
   font-size: 30px;
 }
-.hero h2{
+.hero h2 {
   margin-top: 40px;
   font-size: 25px;
 }
 .container h2 {
   font-size: 30px;
   font-weight: bold;
-}
-.container p {
-  font-family: var(--font-family);
-  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
 }
 .paragraph {
   border: 2px solid var(--primary-color);
   border-radius: 15px;
   background-color: var(--background-color);
+}
+.paragraph p {
+  font-size: 20px;
+  font-family: var(--font-family);
+  margin-top: 25px;
+}
+.hero a,
+.paragraph a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.paragraph a {
+  font-family: "Dancing Script", cursive;
+}
+.hero a:hover,
+.paragraph a:hover {
+  color: var(--color-link);
+}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .hero h3 {
+    font-size: 25px;
+  }
+  .paragraph p {
+    font-size: 15px;
+  }
+  .container h2 {
+    font-size: 25px;
+  }
 }
